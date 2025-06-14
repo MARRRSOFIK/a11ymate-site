@@ -1,93 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="60‑second AI scanner for ADA/WCAG accessibility issues" />
-        <meta name="author" content="A11y Mate" />
-        <title>A11y Mate – 60‑second ADA scanner</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap Icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <!-- SimpleLightbox plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">A11y&nbsp;Mate</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 h-100">
-                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Scan your website for ADA fines in&nbsp;60&nbsp;seconds</h1>
-                        <hr class="divider" />
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Instantly detect critical WCAG issues that could trigger accessibility lawsuits and lose conversions.</p>
-                       <!-- Lead-form CTA -->
-<!-- Lead-form CTA -->
-<a href="https://tally.so/r/mZLx1a"
-   target="_blank"
-   class="btn btn-primary btn-xl">
-  Get Early Access / Free Scan
-</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- About-->
-        <section class="page-section bg-primary" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">Why accessibility matters</h2>
-                        <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">Over 4,000 ADA web‑accessibility lawsuits were filed in 2024 alone. Stay compliant and inclusive to protect revenue and reputation.</p>
-                        <a class="btn btn-light btn-xl" href="#services">See How&nbsp;It Works</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Services-->
-        <!-- (original content left unchanged) -->
-        
-        <!-- Portfolio (unchanged) -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="60-second AI scanner for ADA/WCAG accessibility issues" />
+  <meta name="author" content="A11y Mate" />
+  <title>A11y Mate – 60-second ADA scanner</title>
 
-        <!-- Call to action removed -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
-        <!-- Contact (unchanged) -->
+  <!-- Bootstrap Icons + Google Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&display=swap" rel="stylesheet" />
 
-        <!-- Footer-->
-        <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">© 2025 A11y Mate</div></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- SimpleLightbox plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- Tally embed -->
-        <script async src="https://tally.so/widgets/embed.js"></script>
-    </body>
+  <!-- SimpleLightbox (для портфолио) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+
+  <!-- Core theme (из репо) -->
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+
+<!-- ========  NAVBAR  ======== -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+  <div class="container px-4 px-lg-5">
+    <a class="navbar-brand" href="#page-top">A11y&nbsp;Mate</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto my-2 my-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ========  HERO  ======== -->
+<header class="masthead">
+  <div class="container px-4 px-lg-5 h-100">
+    <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+      <div class="col-lg-8 align-self-end">
+        <h1 class="text-white font-weight-bold">
+          Scan your website for ADA fines&nbsp;in&nbsp;60 seconds
+        </h1>
+        <hr class="divider" />
+      </div>
+      <div class="col-lg-8 align-self-baseline">
+        <p class="text-white-75 mb-5">
+          Instantly detect critical WCAG issues that could trigger accessibility lawsuits and lose conversions.
+        </p>
+
+        <!-- Lead-form CTA -->
+        <a href="https://tally.so/r/mZLx1a" target="_blank" class="btn btn-primary btn-xl">
+          Get Early Access&nbsp;/ Free Scan
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ========  ABOUT  ======== -->
+<section class="page-section bg-primary" id="about">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="text-white mt-0">Why accessibility matters</h2>
+        <hr class="divider divider-light" />
+        <p class="text-white-75 mb-4">
+          Over 4 000 ADA web-accessibility lawsuits were filed in 2024 alone. Stay compliant and inclusive to protect revenue and reputation.
+        </p>
+        <!-- якорь ведёт к секции Services -->
+        <a class="btn btn-light btn-xl" href="#services">See How It Works</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========  SERVICES  ======== -->
+<section class="page-section" id="services">
+  <div class="container px-4 px-lg-5">
+    <h2 class="text-center mt-0">How A11y Mate helps</h2>
+    <hr class="divider" />
+    <div class="row gx-4 gx-lg-5">
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mt-5"><i class="bi-shield-lock fs-1 text-primary"></i>
+          <h3 class="h4 mb-2">Reduce legal risk</h3>
+          <p class="text-muted mb-0">Find non-compliance before lawyers do.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mt-5"><i class="bi-speedometer2 fs-1 text-primary"></i>
+          <h3 class="h4 mb-2">60-second scan</h3>
+          <p class="text-muted mb-0">Immediate, actionable report — no install.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mt-5"><i class="bi-lightbulb fs-1 text-primary"></i>
+          <h3 class="h4 mb-2">AI-driven fixes</h3>
+          <p class="text-muted mb-0">GPT suggests alt-texts &amp; color contrasts.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="mt-5"><i class="bi-graph-up fs-1 text-primary"></i>
+          <h3 class="h4 mb-2">Boost UX &amp; SEO</h3>
+          <p class="text-muted mb-0">Accessible sites rank and convert better.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========  PORTFOLIO  ======== -->
+<div id="portfolio">
+  <div class="container-fluid p-0">
+    <div class="row g-0">
+      <!-- пример мини-галереи (можно заменить своими скринами) -->
+      <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Audit dashboard">
+          <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="Audit dashboard" />
+          <div class="portfolio-box-caption">
+            <div class="project-category text-white-50">Dashboard</div>
+            <div class="project-name">Compliance report</div>
+          </div>
+        </a>
+      </div>
+      <!-- …ещё карточки, если нужно… -->
+    </div>
+  </div>
+</div>
+
+<!-- ========  CONTACT  ======== -->
+<section class="page-section" id="contact">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-lg-8 col-xl-6 text-center">
+        <h2 class="mt-0">Get in touch</h2>
+        <hr class="divider" />
+        <p class="text-muted mb-5">Questions about accessibility or pricing? Drop us a line.</p>
+      </div>
+    </div>
+    <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+      <div class="col-lg-6">
+        <!-- простой контакт-форм / placeholder -->
+        <form>
+          <div class="form-floating mb-3">
+            <input class="form-control" id="name" type="text" placeholder="Your name…" />
+            <label for="name">Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input class="form-control" id="email" type="email" placeholder="name@example.com" />
+            <label for="email">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea class="form-control" id="message" placeholder="Message" style="height: 10rem"></textarea>
+            <label for="message">Message</label>
+          </div>
+          <div class="d-grid"><button class="btn btn-primary btn-xl" type="submit" disabled>Send (static demo)</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========  FOOTER  ======== -->
+<footer class="bg-light py-5">
+  <div class="container px-4 px-lg-5">
+    <div class="small text-center text-muted">© 2025 A11y Mate</div>
+  </div>
+</footer>
+
+<!-- ========  SCRIPTS  ======== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Tally embed (для модальных форм, если используете) -->
+<script async src="https://tally.so/widgets/embed.js"></script>
+</body>
 </html>
